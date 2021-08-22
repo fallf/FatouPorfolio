@@ -1,18 +1,38 @@
 @charset "UTF-8";
 /* CSS Document */
+header{
+    background-color: grey;
+    padding: 30px 45px;
 
-header h1{
-    background: color #f6f5f5;
-    margin:0px;
-    padding:0px;
-    
 }
+header h1 a {
+   
+        font-weight: bold;
+        font-size: 36px;
+        color:black;
+        margin: 0;
+        display: inline;      
+}
+nav ul li a{
+    
+    margin: 30px;
+    font-family: myriad pro regular;
+    font-size: 36px;
+    font-weight: bolder;
+    color: black;
+    display: inline;
+
+}
+header nav ul li {
+    display: inline;
+  }
 ul{
     list-style:none;
 }
 a{
     text-decoration:none;
 }
+
 body{
     width:100%;
     height:95vh;
@@ -21,39 +41,20 @@ body{
     background-size: cover;
     position: relative;
 }
-
 header nav{
     float: right;
-    justify-content: space-between;
-    background-color: grey;
-    box-shadow:2px 2px 12px rgba (0,0,0,0.2);
-    padding:20px 35px;
+    margin: 7px o;
 }
 nav ul{
     display: flex;
 }
-header ul li{
-    display: inline;
-}
 
-
-nav ul li a {
-    
-    margin: 30px;
-    font-family: myriad pro regular;
-    color: #505050;
-    font-size: 15px;
-    font-weight: 700;
-}
 .logo{
     font-family: RoadTest;
     color: #000000;
     font-size: 22px;
 }
-.active{
-    font-weight: bold;
-    color: #2d2a2a;
-}
+
 .text-container p:nth-child(1){
     font-family: calibri;
     font-weight: bold;
@@ -103,9 +104,8 @@ button:active{
     transform:scale(1.1);
 }
 .model{
-    width: 200px;
-    height: 300px;
-    bottom: 0px;
+    width: 100px;
+    height: 200x;
     float: right;
     position: relative;
     border-radius: 50%;
