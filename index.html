@@ -1,43 +1,85 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatou Fall</title>
+    <meta charset="UTF-8" />
+    <title>Fatou Fall Porfolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+<!--change the title to be more descriptive-->
 <body>
- <header>
-     <h1>
-     <a href="/">Fatou Fall Porfolio</a>
-     </h1>
- <nav>
-    <!-- Unordered list element -->
-    <a href="#" class="logo"><Porfolio/a>
-    <ul>
-      <li><a href="#About-Me">About me</a></li>
-      <li><a href="#Work">Work</a></li>
-      <li> <a href="#Contact Me">Contact me</a></li>
-      <li><a href="#Resume">Resume</a></li>
-    </ul>
-    </nav>
+    <header class="header">
+        <h1>Fatou Fall Porfolio</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me </a>
+                </li>
+                <li><a href="./resume.pdf">Resume</a></li>
+            </nav>
     </header>
     <section>
-    <div class="text-container">
-        <P>Welcome</P>
-        <p>I'M Fatou</p>
-        <p>I am Full Stack Web Developer</p>
-        <button class="hire-btn">Hire me</button>       
-    </div>
-
-    <img src="images/fatou.porfolio.jpg" class="model" alt="model">
-</section>
-<section>
+        <div class="text-container">
+            <P>Welcome</P>
+            <p>I'M Fatou</p>
+            <p>I am Full Stack Web Developer</p>
+           <a href="#dance"> <button class="hire-btn">Hire me</button></a>       
+        </div>
     
-    </section>
-  
-  
+    <main class="hero"></main>
+    <!--change the "div" to a more accurate-->
+    <main class="content">
+       <a id="about-me"> <article class="aboutme"></a>
+            <img src="./images/fatou.porfolio.jpg" class="float-left" alt="image"/>
+            <h2>About Me</h2>
+            <p>
+            I am currently enrolled as a Full Stack Web Developer at Columbia Engineering Coding Boot Camp. I have a dual degree in Theater (BA) and Organization Communication (BS) from SUNY New Paltz. Over the years I have seen how technology has advanced and is integrated into our everyday lives. I want to be part of the wave. I am taking everything day by day, excited to use what I have learned to help the movement.
+            </p>
+        </article>
+       <a id="work"><article id="work" class="work"></a>
+            <a href="./images/050-mock-up.jpg"><img src="./images/050-mock-up.jpg" class="float-right" alt="image" /></a>
+            <h2>Work</h2>
+            <p>
+                Although it's only have been a couple of weeks we have completed numerous projects. MY favorite is a website I built using HTML and CSS.    
+            </p>
+        </article>5
+        
+    </main>
+    <aside class="Contact">
+       <a id="contact-me"><section class="Contact-lead"></a>
+            <a id="dance"></a><h3>Contact Me</h3></a>
+            <p><a href="mailto:fatoufall95@gmail.com">Send a Email</a></p>
+            <a href="https://linkedin.com/in/fatou-fall-897043b8">My linkedin</a>
+            <a href="tel:9172512743" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"><p class="call-button">Click to Call</p></a>
+            
+        </section>
+        <section class="code">
+            <h3>What I'm learning</h3>
+            <p>
+                HTML, CSS, GIT, JAVASCRIPT
+            </p>
+        </section>
+        <section class="simple">
+            <h3>what I'm going to learn</h3>
+            <p>
+                Bootstrap, The DOM, APIs, JQuery, JSON, JAX Node, ES6, Object-Oriented Programming, Express, MySQL, MVC Paradigm, Sequelize, Testing, Agile Development, Progressive Web Apps, React, NoSQL, MERN Stack, Computer Science Fundamentals 
+            </p>
+        </section>
+    </aside>
+    <footer class="footer">
+        <h2> by Fatou Working progress</h2>
+        <p>
+            &copy; 2021 Fatou Fall, Inc.
+        </p>
+    </footer>
 </body>
+
 </html>

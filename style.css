@@ -1,58 +1,54 @@
-@charset "UTF-8";
-/* CSS Document */
-header{
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: grey;
-    padding: 30px 45px;
-
-}
-header h1 a {
-   
-        font-weight: bold;
-        font-size: 36px;
-        color:black;
-        margin: 0;
-        display: inline;      
-}
-nav ul li a{
-    
-    margin: 30px;
-    font-family: myriad pro regular;
-    font-size: 36px;
-    font-weight: bolder;
-    color: black;
-    display: inline;
-
-}
-header nav ul li {
-    display: inline;
-  }
-ul{
-    list-style:none;
-}
-a{
-    text-decoration:none;
+    color: #ffffff;
+  
 }
 
-body{
-    width:100%;
-    height:95vh;
-    background-image:url("../Porfolio/images/web.back.jpeg");
-    background-repeat:no-repeat;
-    background-size: cover;
-    position: relative;
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
 }
-header nav{
+
+.header h1 .Fall {
+    color: #d9dcd6;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
     float: right;
-    margin: 7px o;
-}
-nav ul{
-    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
-.logo{
-    font-family: RoadTest;
-    color: #000000;
-    font-size: 22px;
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
 }
 
 .text-container p:nth-child(1){
@@ -103,7 +99,18 @@ nav ul{
 button:active{
     transform:scale(1.1);
 }
-.model{
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./images/web.back.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
     width: 100px;
     height: 200x;
     float: right;
@@ -111,4 +118,147 @@ button:active{
     border-radius: 50%;
 }
 
+.float-right {
 
+    float: right;
+    margin-left: 25px;
+    width: 50px;
+    height: 300x;
+    
+   
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.Contact {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: grey;
+}
+.Contact-lead,
+.code,
+.simple {
+    margin-bottom: 32px;
+    color:#ffffff
+}
+.Contact-lead h3,
+.code h3,
+.simple h3 {
+    margin-bottom: 10px;  
+    text-align: center; 
+}
+.aboutme, .work{
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: grey;
+    color: #ffffff;
+}
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+    .text-container {
+    width: 100%;
+  }
+  
+  .text-container{
+    text-align: center;
+  }
+
+  }
+  @media screen and (max-width: 768px) {
+
+    .Contact, .code, .simple {
+      padding: 30px 15px;
+    }
+  
+    .Contact h3, .code h3, .simple h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .Contact p, .code p, .simple p  {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 575px) {
+
+    .header{
+      width: 100%;
+    }
+  
+    .text-container{
+      width: 95%;
+    
+    }
+  
+    .Contact, .code, .simple {
+      width: 100%;
+    }
+  
+    .Contact, .code, .simple  {
+      flex: 0 100%;
+    }
+  
+    .Contact, .code, .simple  {
+      text-align: center;
+    }
+  
+    .Contact, .code, .simple > * {
+      flex: 0 100%;
+    }
+  }
+@media screen and (max-width:410px) {
+    .text-container { 
+    text-align: center;
+    flex-shrink: unset;
+    overflow: hidden;
+    margin-top: 20px;
+
+    }
+  }
